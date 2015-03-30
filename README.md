@@ -7,3 +7,7 @@ dann bei dem Start des Bukkitplugins geladen.
 
 Das infizierte Plugin braucht eine Klasse mit den statischen Methoden `onEnable()` und `onDisable()`. Im Rootverzeichnismuss eine
 extension.yml liegen, in der die Main-Class angeben ist (`main: de.infectedplugin.Main`).
+
+## TODO
+
+- GUI hinzufügen (WIP)
