@@ -43,11 +43,11 @@ public class JarPacker {
         outputStream.putNextEntry(jarEntry);
 
         BufferedInputStream inputStream = new BufferedInputStream(new FileInputStream(fromFile));
-        byte[] buffer = new byte[1024];
-        int count = 0;
-        while(count != -1) {
-            count = inputStream.read(buffer);
+        byte[] buffer = new byte[(inputStream.available() > 1024) ? 1024 : inputStream.available()];
+        while(inputStream.available() > 0) {
+            inputStream.read(buffer);
             outputStream.write(buffer);
+            buffer = new byte[(inputStream.available() > 1024) ? 1024 : inputStream.available()];
         }
         outputStream.closeEntry();
         inputStream.close();
