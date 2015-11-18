@@ -1,6 +1,6 @@
 ## Injector
 
-Mit diesem Tool ist es möglich ein infiziertes Plugin (dazu später mehr) in ein Bukkitplugin zu injezieren. Dieses Plugin wird
+Mit diesem Tool ist es möglich ein infiziertes Plugin (dazu später mehr) in ein Bukkitplugin zu injizieren. Dieses Plugin wird
 dann bei dem Start des Bukkitplugins geladen.
 
 ## Das infizierte Plugin
